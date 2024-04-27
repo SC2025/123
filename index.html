@@ -11,7 +11,7 @@ main
 
 .div_all_product{
 display: flex;
-height: 100px;
+height: 150px;
 padding: 10px;
 border: 3px solid black;
 margin: 10px;
@@ -36,7 +36,7 @@ font-weight: 1000;
 
 #main_heding{
 height: 50px;
-border: 3px solid black;
+border: 1px solid black;
 margin: 10px;
 font-size: 30px;
 display: flex;
@@ -44,8 +44,8 @@ align-items: center;
 justify-content: center;
 font-weight: 1000;
 border-radius: 50%;
-background-color: rgb(225, 141, 141);
-color: rgb(255, 255, 255);
+background-color: rgb(228, 215, 215);
+color: rgb(0, 0, 0);
 }
 #all_product_heding{
 display: flex;
@@ -71,29 +71,46 @@ display: flex;
 gap: 10px;
 }
 
+.first_sms1,.first_sms2,.first_sms3,.first_sms4,.first_sms5,.first_sms6,.first_sms7,.first_sms8{
+    background-color: rgb(219, 236, 218);
+border: 1px solid;
+padding: 8px;
+border-radius: 20px;
+width: 400px;
+display: flex;
+}
+.img-logo{
+    
+    height: 50px;
+    margin: 5px;
+    border-radius: 50%;
+    padding: 3px;
+   background-color: black;
+}
 </style>
 </head>
 <body>
-<div id="main_heding">सह्याद्री कलेक्शन</div>
+    
+<div id="main_heding"><img class="img-logo" src="data:image/png;base64,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" alt="">सह्याद्री कलेक्शन <img class="img-logo" src="data:image/png;base64,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" alt=""></div>
 <marquee behavior="" direction="">
 <div id="marquee_flex_line">
 
 <p class="marquee_para">The big discount offer each product 20 % discount ;order NOW.</p>
-<p id="first_sms"></p>
+<p class="first_sms1"></p>
 <p class="marquee_para">The big discount offer each product 20 % discount ;order NOW.</p>
-<p id="first_sms"></p>
+<p class="first_sms2"></p>
 <p class="marquee_para">The big discount offer each product 20 % discount ;order NOW.</p>
-<p id="first_sms"></p>
+<p class="first_sms3"></p>
 <p class="marquee_para">The big discount offer each product 20 % discount ;order NOW.</p>
-<p id="first_sms"></p>
+<p class="first_sms4"></p>
 <p class="marquee_para">The big discount offer each product 20 % discount ;order NOW.</p>
-<p id="first_sms"></p>
+<p class="first_sms5"></p>
+<p class="m`arquee_para">The big discount offer each product 20 % discount ;order NOW.</p>
+<p class="first_sms6"></p>
 <p class="marquee_para">The big discount offer each product 20 % discount ;order NOW.</p>
-<p id="first_sms"></p>
+<p class="first_sms7"></p>
 <p class="marquee_para">The big discount offer each product 20 % discount ;order NOW.</p>
-<p id="first_sms"></p>
-<p class="marquee_para">The big discount offer each product 20 % discount ;order NOW.</p>
-<p id="first_sms"></p>
+<p class="first_sms8"></p>
 <p class="marquee_para">The big discount offer each product 20 % discount ;order NOW.</p>
 </div>
 </marquee>
@@ -106,23 +123,20 @@ gap: 10px;
 </a>
 </div>
 <div>
-<a href=""><button class="btn" id="Women">Women</button>
+<a href=""><button class="btn" id="Women">Women & Kids</button>
 </a>
 </div>
-
+<div>
+    <a href=""></a><button class="btn" id="Home_&_Furniture">Home & Furniture</button>
+    </a>
+    
+    </div>
 
 </div>
 <div>
-<div>
-<a href=""><button class="btn" id="Baby_&_Kids">Baby & Kids</button>
-</a>
-</div>
 
-<div>
-<a href=""></a><button class="btn" id="Home_&_Furniture">Home & Furniture</button>
-</a>
 
-</div>
+
 </div>
 
 </div>
@@ -130,15 +144,12 @@ gap: 10px;
 </div>
 <script>
 let btn_btn_1 = document.getElementById("man");
-let btn_btn_2 = document.getElementById("Baby_&_Kids");
 let btn_btn_3 = document.getElementById("Women");
 let btn_btn_4 = document.getElementById("Home_&_Furniture");
 setInterval(() => {
 
 btn_btn_1.style.backgroundColor = "white";
 btn_btn_1.style.color = "black";
-btn_btn_2.style.backgroundColor = "white";
-btn_btn_2.style.color = "black";
 btn_btn_3.style.backgroundColor = "white";
 btn_btn_3.style.color = "black";
 btn_btn_4.style.backgroundColor = "white";
@@ -149,8 +160,6 @@ btn_btn_4.style.color = "black";
 setInterval(() => {
 btn_btn_1.style.backgroundColor = "black";
 btn_btn_1.style.color = "white";
-btn_btn_2.style.backgroundColor = "black";
-btn_btn_2.style.color = "white";
 btn_btn_3.style.backgroundColor = "black";
 btn_btn_3.style.color = "white";
 btn_btn_4.style.backgroundColor = "black";
@@ -159,843 +168,29 @@ btn_btn_4.style.color = "white";
 }, 2000);
 
 
+const time = new Date().getHours();
+let greeting;
+if (time < 12) {
+  greeting = "Good Morning dear customers";
+} else if (time < 17) {
+  greeting = "Good Afternoon dear customers";
+} else {
+  greeting = "Good Evening dear customers";
+}
+document.querySelector(".first_sms1").innerHTML = greeting;
+document.querySelector(".first_sms2").innerHTML = greeting;
+document.querySelector(".first_sms3").innerHTML = greeting;
+document.querySelector(".first_sms4").innerHTML = greeting;
+document.querySelector(".first_sms5").innerHTML = greeting;
+document.querySelector(".first_sms6").innerHTML = greeting;
+document.querySelector(".first_sms7").innerHTML = greeting;
+document.querySelector(".first_sms8").innerHTML = greeting;
+
+
 
 </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
