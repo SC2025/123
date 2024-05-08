@@ -85,11 +85,11 @@ font-weight: bold;
    /* background-color: black; */
 }
 .img-logo{
-    
+    border: 1px red solid;
     height: 50px;
     margin: 5px;
     border-radius: 50%;
-    padding: 3px;
+ 
    /* background-color: black; */
 }
 .imgmarquee{
@@ -106,6 +106,10 @@ font-weight: bold;
  size: 100%;
  
 }
+#custemer_suppore{
+    border: 2px solid black;
+    margin: 5px;
+}
 
 body{
     background-repeat: no-repeat;
@@ -118,8 +122,19 @@ body{
 
 }
 #imgs{
-    height: 300px;
-padding: 16px;}
+    height: 30%;
+padding: 1px;}
+
+
+.CS{
+    color: aliceblue;
+   
+}
+#quear{
+margin: 3px;
+padding: 3px;
+border: 1px solid black;
+}
 
 </style>
 </head>
@@ -127,7 +142,7 @@ padding: 16px;}
     <div id="a">
 
    
-<div id="main_heding"><img class="img-logo" src="logo.png" alt="">सह्याद्री कलेक्शन </div>
+<div id="main_heding"><img class="img-logo" src="logo.jpg" alt="">सह्याद्री कलेक्शन </div>
 <marquee behavior="" direction="">
 <div id="marquee_flex_line">
 
@@ -180,14 +195,14 @@ padding: 16px;}
 
 
 
-<a href="https://SC2025.github.io/hm-pro/">
+<!-- <a href="https://SC2025.github.io/hm-pro/">
     <button id="Home_&_Furniture" class="btn"> 
          <div >
             Home & Furniture
         </div>
     <img class="img-logo-2" src="home.png" alt="home.png">
 </button>
-</a>
+</a> -->
 
 
 
@@ -237,6 +252,17 @@ padding: 16px;}
 <img class="imgmarquee" src="shp4.jpg" alt="">     
 <img class="imgmarquee" src="shp5.jpg" alt="">
 </marquee>
+<DIV>
+    <P id="QP"></P>
+    <P id="QN"></P>
+    <P id="QTN"></P>
+</DIV>
+<div id="custemer_suppore">
+    <div class="CS">main branch- pune (branch code - SC01)</div>
+    <div class="CS">branch 2nd- Rahimatpur (branch code - SC02)</div>
+    <BUtton onclick="gotowhatsapp()" id="quear">click to contact customer care for any query</BUtton>
+</div>
+
 <script>
 let btn_btn_1 = document.getElementById("man");
 let btn_btn_3 = document.getElementById("Women");
@@ -283,6 +309,67 @@ document.querySelector(".first_sms8").innerHTML = greeting;
 
 
 
+//id print perr
+function ORDER_ID_PREE() {
+      myDate = new Date
+            var hours = myDate.getHours(); 
+            hours = hours % 12; 
+            hours = hours ? hours : 12; 
+            var minutes = myDate.getMinutes(); 
+            minutes = minutes < 10 ? '0' + minutes : minutes; 
+            var myTime = "SC-QTN-" + hours + minutes + "-"
+            QP.innerHTML = myTime
+    } ORDER_ID_PREE()
+    
+
+
+
+//id print next
+    function ORDER_ID_NEXT(){
+    
+    // Creating the date instance
+    let d = new Date();
+    
+    // Adding one date to the present date
+    d.setDate(d.getDate() );
+    
+    let year = d.getFullYear()
+    let month = String(d.getMonth() + 1)
+    let day = String(d.getDate())
+    
+    // Adding leading 0 if the day or month
+    // is one digit value
+    month = month.length == 1 ?
+    month.padStart('2', '0') : month;
+    
+    day = day.length == 1 ?
+    day.padStart('2', '0') : day;
+    
+    // Printing the present date
+    QN.innerHTML = `${day}${month}${year}`;
+    
+    
+    } ;ORDER_ID_NEXT();
+
+
+    QTN.innerHTML = QP.innerHTML + QN.innerHTML;
+
+
+
+// var query = document.getElementById("QTN")
+
+function gotowhatsapp(){
+    var b1 =  document.getElementById("QTN").innerHTML;
+
+    var url = "https://wa.me/919834926132?text="
+    + "Your query ticket NO-" + "%0a"
+    + b1 + "%0a" + "%0a"
+     + "SEND this SMS AND write your query" 
+    window.open(url, '_blank').focus();
+}
+ 
+   
+    
 </script>
 </body>
 </html>
