@@ -323,7 +323,7 @@ function ORDER_ID_PREE() {
             hours = hours ? hours : 12; 
             var minutes = myDate.getMinutes(); 
             minutes = minutes < 10 ? '0' + minutes : minutes; 
-            var myTime = "SC-QTN-" + hours + minutes + "-"
+            var myTime = "सह्याद्री" + hours + minutes + "-"
             QP.innerHTML = myTime
     } ORDER_ID_PREE()
     
@@ -352,7 +352,7 @@ function ORDER_ID_PREE() {
     day.padStart('2', '0') : day;
     
     // Printing the present date
-    QN.innerHTML = `${day}${month}${year}`;
+    QN.innerHTML = `${month}${year}${day}-QY`;
     
     
     } ;ORDER_ID_NEXT();
