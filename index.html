@@ -200,7 +200,7 @@ border: 1px solid black;
          <div class="f">
           Mens <br> Products
         </div>
-    <img class="img-logo-2" src="man.png" alt="man.png">
+    <img id="manphoto" class="img-logo-2" src="man.png" alt="man.png">
 </button>
 </a>
 
@@ -211,7 +211,7 @@ border: 1px solid black;
          <div class="f">
             Womens & kids <br> Products
         </div>
-    <img class="img-logo-2" src="woman.jpg" alt="woman.jpg">
+    <img id="womphoto" class="img-logo-2" src="woman.jpg" alt="woman.jpg">
 </button>
 </a>
 
@@ -226,7 +226,7 @@ border: 1px solid black;
          <div class="f">
            home <br> Products
         </div>
-    <img class="img-logo-2" src="home.png" alt="home.png">
+    <img id="homephoto" class="img-logo-2" src="home.png" alt="home.png">
 </button>
 </a>
 
@@ -302,6 +302,9 @@ btn_btn_3.style.color = "black";
 btn_btn_4.style.backgroundColor = "white";
 btn_btn_4.style.color = "black";
 document.getElementById("img-logo").style.backgroundColor = "red";
+document.getElementById("manphoto").style.height = "80px";
+document.getElementById("womphoto").style.height = "80px";
+document.getElementById("homephoto").style.height = "80px";
 
 }, 1000);
 
@@ -313,7 +316,9 @@ btn_btn_3.style.color = "white";
 btn_btn_4.style.backgroundColor = "black";
 btn_btn_4.style.color = "white";
 document.getElementById("img-logo").style.backgroundColor = "black";
-
+document.getElementById("manphoto").style.height = "110px";
+document.getElementById("womphoto").style.height = "110px";
+document.getElementById("homephoto").style.height = "110px";
 }, 2000);
 
 
