@@ -167,7 +167,6 @@ border: 1px solid black;
   /* justify-content: center; */
   text-align: center;
   align-items: center;
-  gap: 5px;
   font-weight: 1000;
  
 }
@@ -177,8 +176,6 @@ a{
 .nav{
 border: 2px solid white;
 display: flex;
-gap: 20px;
-
 padding: 10px;
 font-weight: 1000;
 align-items: center;
@@ -189,7 +186,7 @@ flex-wrap: wrap;
 .nav>div{
 border: 2px solid white;
 display: flex;
-height: 10vh;
+height: fit-content;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -198,11 +195,13 @@ border-radius: 2%;
 color: rgb(255, 255, 255);
 background-color: #000000;
 padding: 6px;
+padding-left: 5px;
+padding-right: 5px;
 }
 
 .active2{
   color: rgb(255, 255, 255);
-
+font-weight: 1000;
 }
 
 .nav>div:hover{
@@ -233,7 +232,49 @@ background-color: rgb(255, 0, 0);
    
 <div id="main_heding"><img id="img-logo" src="logo.jpg" alt="">सह्याद्री कलेक्शन </div>
 
+<div class="nav">
 
+  <DIV id="active1">
+    <a  href="">
+    <br>
+    HOME
+    <br>
+    <br>
+  </a>
+  </DIV>
+  
+    <DIV>
+      <a class="active2" href="https://chat.whatsapp.com/EBaHZ2DJzBp8jaNNvfMwNa">
+     Join <br> whatsapp <br> group
+      </a>
+    </DIV>
+  
+    <div >
+      <a class="active2" id="c_href" href="">
+        <br>
+    Contact
+    <br>
+    <br>
+  </a>
+    </div>
+  
+    <div>
+      <a class="active2" id="q_href" href=""> 
+        Ask <br> your <br> query
+      </a>
+    </div>
+  
+  
+    <div>
+      <a class="active2" href="">
+        <br>
+        about us
+      <br>
+      <br>
+      </a>
+    </div>
+  
+  </div>
 
 
 <marquee behavior="" direction="">
@@ -359,27 +400,28 @@ background-color: rgb(255, 0, 0);
    <div class="nav">
 
     <DIV id="active1">
+      <a  href="">
       <i class="fa fa-home" style="font-size:35px;color:black"></i>
-      <br>
-      <a  href="">HOME</a>
+       <br> HOME</a>
     </DIV>
     
       <DIV>
-        <i class="fa fa-whatsapp" style="font-size:35px;color:rgb(127, 241, 127)"></i>
-        <a class="active2" href="https://chat.whatsapp.com/EBaHZ2DJzBp8jaNNvfMwNa"> 
-          Join <br> whatsapp <br> group
+        <a class="active2" href="https://chat.whatsapp.com/EBaHZ2DJzBp8jaNNvfMwNa">
+        <i class="fa fa-whatsapp" style="font-size:35px;color:rgb(127, 241, 127)"></i> 
+         <br> Join <br> whatsapp <br> group
         </a>
       </DIV>
     
       <div >
+        <a class="active2" id="c_href" href="">
         <i class="fa fa-phone" style="font-size:35px;color:rgb(127, 241, 127)"></i>
-        <a class="active2" id="c_href" href="">Contact</a>
+      <br> Contact</a>
       </div>
     
       <div>
-        <i class="fa fa-envelope" style="font-size:35px;color:rgb(252, 61, 3)"></i>
         <a class="active2" id="q_href" href=""> 
-          Ask <br> your <br> query
+        <i class="fa fa-envelope" style="font-size:35px;color:rgb(252, 61, 3)"></i>
+         <br> Ask <br> your <br> query
         </a>
       </div>
     
