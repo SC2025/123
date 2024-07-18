@@ -24,7 +24,13 @@ margin-top: 3px;
 margin-bottom: 3px;
 }
 
-
+.div_all_product>a{
+  flex-wrap: wrap;
+   display: flex;
+  text-align: center; 
+  justify-content: center;
+align-items: center;
+}
 
 
 #main_heding{
