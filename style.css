@@ -10,23 +10,21 @@
   height: fit-content;
   font-weight: 1000;
   color: rgb(0, 0, 0);
+  gap: 5px;
 
 }
 
 .div_all_product>div{
-  flex-wrap: wrap;
    display: flex;
   text-align: center; 
   justify-content: center;
- width: 20%;
+ width: fit-content;
  font-weight: 1000;
 margin-top: 3px;
 margin-bottom: 3px;
 }
 
-.div_all_product>a{
-  flex-wrap: wrap;
-}
+
 
 
 #main_heding{
@@ -180,23 +178,18 @@ font-size: 10px;
 .active2{
   color: rgb(255, 255, 255);
 font-weight: 1000;
+
 }
 
 .nav>div:hover{
 background-color: rgb(255, 0, 0);
-
-
 }
 
 #active1{
-  background-color: #ff0000;
-  font-weight: 1000;
   color: rgb(255, 255, 255);
+font-weight: 1000;
+background-color: rgb(255, 0, 0);
 }
-#active1>a{
-  background-color: #ff0000;
-  font-weight: 1000;
-  color: rgb(255, 255, 255);
-}
+
 
 
