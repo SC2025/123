@@ -1,3 +1,9 @@
+document.addEventListener("contextmenu",function(e){
+  e.preventDefault()
+},false
+);
+
+
 
 function btn_main_icon() {
   const btn_main = document.querySelectorAll(".btn");
