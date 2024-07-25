@@ -47,7 +47,7 @@ function ORDER_ID_PREE() {
             hours = hours ? hours : 12; 
             var minutes = myDate.getMinutes(); 
             minutes = minutes < 10 ? '0' + minutes : minutes; 
-            var myTime = "सह्याद्री" + minutes + hours + "-"
+            var myTime = "सह्याद्री-" + minutes + hours + "-"
             QP.innerHTML = myTime
     } ORDER_ID_PREE()
     
