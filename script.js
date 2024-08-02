@@ -104,7 +104,7 @@ q_href();
 
 function C_href(){
 document.getElementById("c_href").href = "https://wa.me/919834926132?text="
- + "hii...I AM CUSTEMER OF सह्याद्री कलेक्शन" 
+ + "hii...I AM CUSTOMER OF सह्याद्री कलेक्शन" 
 
 };
 C_href();
