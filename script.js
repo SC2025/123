@@ -92,6 +92,7 @@ function q_href(){
   var b1 =  document.getElementById("QTN").innerHTML;
 
 document.getElementById("q_href").href = "https://wa.me/919834926132?text="
++"WELCOME COSTEMER IN सह्याद्री कलेक्शन & मेस"
 + "Your query ticket NO-" + "%0a"
 + b1 + "%0a" + "%0a"
  + "write your query and  Send this SMS " 
@@ -100,12 +101,24 @@ document.getElementById("q_href").href = "https://wa.me/919834926132?text="
 q_href();
 
  
+
  
 
 function C_href(){
-document.getElementById("c_href").href = "https://wa.me/919834926132?text="
- + "hii...I AM CUSTOMER OF सह्याद्री कलेक्शन" 
+  const time = new Date().getHours();
+  let greetingABC;
+  if (time < 12) {
+    greetingABC = "Good Morning dear customers";
+  } else if (time < 17) {
+    greetingABC = "Good Afternoon dear customers";
+  } else {
+    greetingABC = "Good Evening dear customers";
+  };
 
+document.getElementById("c_href").href = "https://wa.me/919834926132?text="
+ + "hii.." 
++ greetingABC + +"%0a"
++"WELCOME IN सह्याद्री कलेक्शन & मेस" +"%0a"
 };
 C_href();
     
